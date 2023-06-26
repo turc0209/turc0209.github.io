@@ -5,64 +5,85 @@ a:link {
     text-decoration: none;
     color: black;
     font-size: 1.25rem;
+    z-index: 3;
 }
 .wrapper {
     background-color: #DCECEB;
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: white;
     font-size: 2.75rem;
+    position:relative;
+    top: -70px;
     z-index: 2;
-    margin: auto;
-    position:absolute;
-    top: 150px;
-    left: 420px;
-}
-#starfish-wide {
-    max-width: 800px;
-    z-index: 1;
 }
 
+/* places the starfish image at the top of the page */
+#starfish-wide {
+    max-width: 800px;
+    position: absolute;
+    top: 0em;
+    z-index: 1;
+    
+}
+header {
+    margin-top: 220px;
+}
 header ul li {
     display: inline-block;
-    padding-left: 150px;
+    margin-left: 50px;
+    padding-left: 100px;
     padding-bottom: 30px;
     text-decoration: none;
     align-content: space-evenly;
 
 }
+
+/* creates vertical lines for the header ul */
 .vl {
     border-left: black 1px solid;
+    width: 1px;
     height: 35px;
-    position: absolute;
-    left: 425px;
-    top: 270px;
+    position: relative;
+    left: 275px;
+    top: -60px;
 }
 .vl2 {
     border-left: black 1px solid;
+    width: 1px;
     height: 35px;
-    position: absolute;
-    left: 675px;
-    top: 270px;
+    position: relative;
+    left: 525px;
+    top: -95px;
 }
+
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
     line-height: 1.4;
     background-color: #aad4cf;
 }
+/*separates the body text for formatting*/
+.body-text {
+    padding-left: 1rem;
+}
+
 #story {
     padding-right: 20px;
+    margin-top: -60px;
 }
 h2 {
     font-size:1.6rem;
     padding-bottom: 10px;
     padding-left: 10px;
 }
+
+/* places the second starfish image */
 #starfish {
     float: left;
     max-width: 260px;
@@ -85,11 +106,42 @@ h3 {
     padding: 25px 0px 10px 10px;
     margin: 15px;
 }
-.contact-header {
+
+/* separates the 'would you like to visit the starfish?' text for sizing individually */
+.contact-message {
     font-size: 1rem;
-    
 }
+
+/* resizes the contact input fields */
+#name {
+    width: 46.5rem;
+    display: block;
+}
+#email {
+    width: 46.5rem;
+    display: block;
+}
+#message {
+    width: 46.5rem;
+    height: 5rem;
+    display: block;
+}
+/* adjusts the SEND button */
+.send {
+    border: black solid 1px;
+    padding: 0.5rem;
+    color: black;
+    font-size: 0.6rem;
+    display: block;
+    background-color: #DCECEB;
+    margin-top: 0.75rem;
+}
+.send:hover {
+    background-color: #aad4cf;
+}
+
 footer {
     text-align: right;
     padding-right: 40px;
+    padding-top: 5px
 }
