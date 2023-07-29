@@ -9,23 +9,25 @@
 <body>
     <header>
         <div class="wrapper">
-            <img src="images/logo.png" alt="Logo">
-          <span id="home">
-            Home
-          </span>
-          
-          <nav>
-            <ul>
-              <li><a href="#about-us">About Us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <input type="text" placeholder="Search">
-          </nav>
+                <img src="images/logo.png" alt="Logo">
+            <span id="home">
+                Home
+            </span>
+            <nav>
+                <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- Magnifying glass icon needed beside search bar -->
+                <input type="text" placeholder="Search">
+            </nav>
         </div>  
-      </header>
+    </header>
+
       <section id="welcome" class="bg-black">
+        <!-- black background to be made transparent, image takes full background behind it -->
         <div class="wrapper">
           <img src="images/main-banner.jpg" alt="Welcome Lobby">
         </div>
@@ -36,6 +38,7 @@
         </article>
       </section>
       <section id="about" class="bg-yellow">
+        <!-- image contained within yellow background -->
         <div class="wrapper">
             <img class="about-pic" src="images/about-us.jpg" alt="Ping Pong Table">
         </div>
@@ -49,6 +52,7 @@
       <section id="services" class="bg-yellow">
         <h2>Our Services</h2>
         <div class="services-grid">
+            <!-- articles here are to be arranged in a grid -->
             <article>
                 <h3>Digital Transformation</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident animi fugit pariatur hic officia eligendi accusantium.</p>
@@ -79,6 +83,7 @@
         </div>
       </section>
       <section id="vision">
+        <!-- image to take up full background -->
             <div class="wrapper">
             <img src="images/vision.jpg" alt="Origami">
             </div>
@@ -91,6 +96,7 @@
         <section id="team" class="bg-yellow">
             <h2>Our Team</h2>
             <div class="team-grid">
+                <!-- images and articles to be arranged in a grid -->
                 <img src="images/john.jpg" alt="John Doe">
                 <article>
                     <h3>John Doe</h3>
@@ -106,33 +112,36 @@
             </div>
         </section>
         <section id="contact">
+            <!-- divs in this section to be arranged using flex -->
             <h2>Contact Us</h2>
-            <div class="message-send">
-                <h3>Send us a message</h3>
-                <form>
-                    <label for="fname">Full Name</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="email">Email</label><br>
-                    <input type="text" id="email" name="email">
-                    <label for="message">Message</label><br>
-                    <input type="text" id="message" name="message"><br>
-                    <a class="btn" href="#">Send</a>
-                </form> 
+            <div class="wrapper">
+                <div class="message-send">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <label for="fname">Full Name</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email">
+                        <label for="message">Message</label><br>
+                        <input type="text" id="message" name="message"><br>
+                        <a class="btn" href="#">Send</a>
+                    </form> 
+                </div>
+                <div class="location">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d44490.80000064277!2d-75.75929460467646!3d45.35755656700828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690651280912!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="hours">
+                    <!-- content to be arranged in a grid -->
+                    <h3>Hours of operation</h3>
+                        <p>Days</p>
+                        <p>Hours</p>
+                        <p>Monday - Friday</p>
+                        <p>9 AM - 6 PM</p>
+                        <p>Saturday - Sunday</p>
+                        <p>Closed</p>
+                </div>
             </div>
-            <div class="location">
-                <h3>Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d44490.80000064277!2d-75.75929460467646!3d45.35755656700828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690651280912!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="hours">
-                <h3>Hours of operation</h3>
-                <span>Days</span>
-                <span>Hours</span>
-                <span>Monday - Friday</span>
-                <span>9 AM - 6 PM</span>
-                <span>Saturday - Sunday</span>
-                <span>Closed</span>
-            </div>
-
         </section>
         <footer class="bg-black">
             <div class="wrapper">
