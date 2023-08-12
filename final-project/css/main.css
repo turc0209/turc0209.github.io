@@ -1,0 +1,358 @@
+/* RESET CODE */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MAIN CSS BEGINS */
+* {
+    box-sizing: border-box;
+}
+/* Google Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+.logo-block {
+    background-color: #c78c06;
+    padding-top: 6em;
+}
+header .wrapper {
+    background-color: #222;
+    margin: 0auto;
+    padding: 1rem;
+}
+
+nav {
+    padding: 1rem;
+    
+}
+nav ul li {
+    padding: 1rem;
+}
+header nav a {
+    
+    color: #c78c06;
+    text-decoration: none;
+    width: 100%;
+}
+
+header nav a:link,
+header nav a:visited {
+    color: #c78c06;
+    padding: 1em 1em;
+}
+header nav a:hover,
+header nav a:focus {
+
+    color: #222;
+    background-color: #c78c06;
+}
+
+header form {
+    font-family: 'Material Icons';
+    display: flex;
+}
+.material-icons-outlined {
+   font-size: 2.5rem;
+    color: #c78c06;
+    outline: #c78c06 solid 1px;
+    padding: 0.2em;
+
+}
+.search {
+    padding: 0.5em;
+    width: 90%;
+    font-size: 1.20rem;
+}
+
+#welcome .wrapper {
+    margin: 0auto;
+    max-width: 1200px;
+    margin: 3em 0;
+}
+#welcome {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#welcome h2 {
+    font-size: 4.5rem;
+    line-height: 6rem;
+    padding-top: 0.5em;
+}
+#welcome .text-box {
+    padding: 1em;
+    padding-bottom: 3rem;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+}
+#welcome p {
+    padding-bottom: 2.5em;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+#welcome a {
+    text-decoration: none;
+    color: #222;
+    background-color: #c78c06;
+    font-size: 1.2rem;
+    padding: 1em;
+    text-align: center;
+}
+
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#about .wrapper {
+    background-color: #ffe6ac;
+    margin: 0auto;
+}
+#about h2 {
+    padding-bottom: 1.75rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+#about p {
+    font-weight: lighter;
+}
+.about-pic {
+    padding: 1rem;
+    width: 100%;
+    flex-grow: 1;
+}
+#about article {
+    padding: 1rem;
+}
+
+#services .wrapper {
+    margin: 0auto;
+    width: 100%;
+}
+#services h2 {
+    padding: 2rem;
+    padding-top: 3rem;
+    font-size: 3rem;
+}
+#services h3 {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+#services a {
+    color: white;
+    text-decoration: none;
+    background-color: #222;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.services-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: repeat(5, 1fr);
+    padding-bottom: 2rem;
+}
+.services-grid article {
+    background-color: #ffe6ac;
+    width: 90%;
+    justify-self: center;
+    padding-bottom: 3rem;
+}
+.services-grid p {
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+.services-grid img {
+    width: 100%;
+}
+
+#vision {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 1rem 3rem 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+#vision .wrapper {
+    width: 100%;
+    margin: 0auto;
+}
+#vision h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+#vision p {
+    padding-bottom: 2rem;
+}
+#vision a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    background-color: #222;
+    padding: 2rem;
+    border:#c78c06 solid 1px;
+}
+
+#team .wrapper {
+    margin: 0auto;
+    width: 100%;
+    max-width: 1200px;
+}
+#team h2 {
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.team-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+}
+#team article {
+    background-color: #ffe6ac;
+    justify-self: center;
+    margin: 0 2rem;
+    width: 95%;
+    padding-bottom: 2rem;
+    line-height: 1.3rem;
+}
+#team p, #team h3 {
+    padding: 1rem;
+}
+#team h4 {
+    padding-left: 1rem;
+    padding-bottom: 0.7rem;
+    border-bottom: #c78c06 solid 2px;
+}
+#team img {
+    width: 100%;
+}
+#team h3 {
+    font-size: 2.5rem;
+}
+
+#contact h2 {
+    padding: 1.5rem;
+    font-size: 3rem;
+}
+#contact h3 {
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem 0 1.5rem;
+    row-gap: 0.5rem;
+}
+#contact input {
+    height: 2rem;
+}
+#contact a {
+    color: #c78c06;
+    background-color: #222;
+    width: 9%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+#message {
+    height: 5rem;
+}
+.hours {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 1.5rem;
+    text-align: center;
+}
+.hours p {
+    border: black solid 1px;
+    padding: 1rem 0;
+}
+.hours p:nth-child(1), .hours p:nth-child(2) {
+    background-color: #ffe6ac;
+}
+iframe {
+    padding: 0 1.5rem;
+    width: 100%;
+}
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 1.5rem;
+    line-height: 1rem;
+}
+footer small {
+    padding: 0.5rem 0;
+    display: block;
+}
+footer a {
+    color: #c78c06;
+}

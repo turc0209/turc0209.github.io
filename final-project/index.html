@@ -5,112 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+
 </head>
 <body>
+    <main>
     <header>
         <div class="wrapper">
-                <img src="images/logo.png" alt="Logo">
-            <span id="home">
-                Home
-            </span>
+                <div class="logo-block"><img src="images/logo.png" alt="Logo"></div>
             <nav>
-                <ul>
+                <ul class="menu">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
                 </ul>
-                <!-- Magnifying glass icon needed beside search bar -->
-                <input type="text" placeholder="Search">
             </nav>
+            <form action="/search" method="get">
+                <input type="text" placeholder="Search" class="search">
+                <span class="material-icons-outlined">
+                    search
+                </span>
+            </form>
         </div>  
     </header>
 
-      <section id="welcome" class="bg-black">
+      <section id="welcome" style="background-image: url('images/main-banner.jpg');">
         <!-- black background to be made transparent, image takes full background behind it -->
         <div class="wrapper">
-          <img src="images/main-banner.jpg" alt="Welcome Lobby">
+            <div class="text-box">
+            <article>
+                <h2>Welcome to Three Star Media</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi illum ea necessitatibus id sit eligendi deleniti consequatur saepe impedit, earum eveniet dolorem laudantium cumque? Dolorem veritatis illo animi numquam.</p>
+                <a class="btn" href="#">Connect with us
+                    <span class="material-icons">
+                        play_arrow
+                    </span>
+                </a>
+            </article>
         </div>
-        <article>
-            <h2>Welcome to Three Star Media</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi illum ea necessitatibus id sit eligendi deleniti consequatur saepe impedit, earum eveniet dolorem laudantium cumque? Dolorem veritatis illo animi numquam.</p>
-            <a class="btn" href="#">Connect with us</a>
-        </article>
+        </div>
       </section>
-      <section id="about" class="bg-yellow">
+
+      <section id="about">
         <!-- image contained within yellow background -->
         <div class="wrapper">
             <img class="about-pic" src="images/about-us.jpg" alt="Ping Pong Table">
-        </div>
-        <article>
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet sequi soluta consequuntur repellendus blanditiis, quaerat ab alias, iste cumque numquam. Veniam itaque placeat hic perferendis adipisci nulla eaque eos. 
+        
+            <article>
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eveniet sequi soluta consequuntur repellendus blanditiis, quaerat ab alias, iste cumque numquam. Veniam itaque placeat hic perferendis adipisci nulla eaque eos. 
+                    <br><br>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, unde ea voluptatum blanditiis dolores neque quis delectus corrupti fugit dolorum. Velit, perferendis. Reprehenderit quaerat quod deserunt aspernatur inventore sapiente hic!
-            </p>
-        </article>
-      </section>
-      <section id="services" class="bg-yellow">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <!-- articles here are to be arranged in a grid -->
-            <article>
-                <h3>Digital Transformation</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident animi fugit pariatur hic officia eligendi accusantium.</p>
-                <a class="btn" href="#">Digital Plans</a>
-            </article>
-          
-            <article>
-                <h3>Marketing</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, doloremque perferendis fuga quidem quis amet iusto labore excepturi? Debitis eaque fugit nisi! Quidem rerum deserunt minima optio similique, suscipit atque.</p>
-                <a class="btn" href="#">Marketing Plans</a>
-            </article>
-          
-            <article>
-                <h3>Video Production</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum animi saepe amet architecto voluptate, sit error laudantium, nulla perferendis quidem adipisci repellendus autem alias! At dolore neque tempora illo.</p>
-                <a class="btn" href="#">Video Plans</a>
-            </article>
-            <article>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corporis totam assumenda modi ratione distinctio porro illum ducimus deleniti laboriosam! Voluptatem, nulla iure minima illo dolorum sint ex a sunt?</p>
-                <a class="btn" href="#">Web Plans</a>
-            </article>
-            <article>
-                <h3>Print</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto saepe dolor laboriosam quas facilis pariatur fugiat quisquam minima aperiam illo necessitatibus possimus omnis minus hic, fugit sunt dolorem, neque earum!</p>
-                <a class="btn" href="#">Print Plans</a>
+                </p>
             </article>
         </div>
       </section>
-      <section id="vision">
+
+      <section id="services" class="bg-yellow">
+        <div class="wrapper">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <!-- articles here are to be arranged in a grid -->
+                <article>
+                    <img src="images/digital.jpg" alt="digital">
+                    <h3>Digital Transformation</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident animi fugit pariatur hic officia eligendi accusantium.</p>
+                    <a class="btn" href="#">Digital Plans
+                        <span class="material-icons">
+                            play_arrow
+                        </span>
+                    </a>
+                </article>
+            
+                <article>
+                    <img src="images/marketing.jpg" alt="digital">
+                    <h3>Marketing</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, doloremque perferendis fuga quidem quis amet iusto labore excepturi? Debitis eaque fugit nisi! Quidem rerum deserunt minima optio similique, suscipit atque.</p>
+                    <a class="btn" href="#">Marketing Plans
+                        <span class="material-icons">
+                            play_arrow
+                        </span>
+                    </a>
+                </article>
+            
+                <article>
+                    <img src="images/video.jpg" alt="video">
+                    <h3>Video Production</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum animi saepe amet architecto voluptate, sit error laudantium, nulla perferendis quidem adipisci repellendus autem alias! At dolore neque tempora illo.</p>
+                    <a class="btn" href="#">Video Plans
+                        <span class="material-icons">
+                            play_arrow
+                        </span>
+                    </a>
+                </article>
+                <article>
+                    <img src="images/web.jpg" alt="web">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum corporis totam assumenda modi ratione distinctio porro illum ducimus deleniti laboriosam! Voluptatem, nulla iure minima illo dolorum sint ex a sunt?</p>
+                    <a class="btn" href="#">Web Plans
+                        <span class="material-icons">
+                            play_arrow
+                        </span>
+                    </a>
+                </article>
+                <article>
+                    <img src="images/print.jpg" alt="print">
+                    <h3>Print</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto saepe dolor laboriosam quas facilis pariatur fugiat quisquam minima aperiam illo necessitatibus possimus omnis minus hic, fugit sunt dolorem, neque earum!</p>
+                    <a class="btn" href="#">Print Plans
+                        <span class="material-icons">
+                            play_arrow
+                        </span>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+      <section id="vision" style="background-image: url('images/vision.jpg');">
         <!-- image to take up full background -->
             <div class="wrapper">
-            <img src="images/vision.jpg" alt="Origami">
-            </div>
             <article>
                 <h3>Our Vision</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat aspernatur autem nam error dolore aliquam libero nisi, distinctio placeat quae at magni doloremque repellendus a ipsum minus iste. Ipsa, alias?</p>
-                <a class="btn" href="#">Learn More</a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat aspernatur autem nam error dolore aliquam libero nisi, distinctio placeat quae at magni doloremque repellendus a ipsum minus iste. Ipsa, alias? Cumque temporibus minima odio dolores dolor commodi, suscipit quae, vel veritatis corrupti omnis facilis molestiae sequi expedita rem, dignissimos molestias ipsa necessitatibus?</p>
+                <a class="btn" href="#">Learn More
+                    <span class="material-icons">
+                        play_arrow
+                    </span>
+                </a>
             </article>
+        </div>
         </section>
-        <section id="team" class="bg-yellow">
+
+        <section id="team">
+            <div class="wrapper">
             <h2>Our Team</h2>
             <div class="team-grid">
                 <!-- images and articles to be arranged in a grid -->
-                <img src="images/john.jpg" alt="John Doe">
-                <article>
+               
+                <article class="john">
+                    <img src="images/john.jpg" alt="John Doe">
                     <h3>John Doe</h3>
                     <h4>CEO and Co-owner</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident animi fugit pariatur hic officia eligendi accusantium.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident animi fugit pariatur hic officia eligendi accusantium. amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident </p>
                 </article>
-                <article>
+                
+                <article class="bob">
+                    <img src="images/bob.jpg" alt="Bob Rite">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam excepturi rem accusamus eius dolor amet at omnis, nihil doloremque animi minima, quia id. Ipsa quod iusto enim, tempore quo provident.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam excepturi rem accusamus eius dolor amet at omnis, nihil doloremque animi minima, quia id. Ipsa quod iusto enim, tempore quo provident. amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident </p>
                 </article>
-                <img src="images/bob.jpg" alt="Bob Rite">
+                
             </div>
+        </div>
         </section>
+
         <section id="contact">
             <!-- divs in this section to be arranged using flex -->
             <h2>Contact Us</h2>
@@ -127,13 +181,10 @@
                         <a class="btn" href="#">Send</a>
                     </form> 
                 </div>
-                <div class="location">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d44490.80000064277!2d-75.75929460467646!3d45.35755656700828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690651280912!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                <h3>Hours of operation</h3>
                 <div class="hours">
                     <!-- content to be arranged in a grid -->
-                    <h3>Hours of operation</h3>
+                   
                         <p>Days</p>
                         <p>Hours</p>
                         <p>Monday - Friday</p>
@@ -141,13 +192,18 @@
                         <p>Saturday - Sunday</p>
                         <p>Closed</p>
                 </div>
+                <div class="location">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d44490.80000064277!2d-75.75929460467646!3d45.35755656700828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690651280912!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
-        <footer class="bg-black">
+        <footer>
             <div class="wrapper">
               <small>&copy;Copyright Three Star Media, 2023</small>
-              <small>All images are taken from Unsplash</small>
+              <small>All images are taken from <a href="">Unsplash</a></small>
             </div>
           </footer>
+        </main>
 </body>
 </html>
