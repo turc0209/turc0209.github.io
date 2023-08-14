@@ -55,6 +55,8 @@ body {
 h1, h2, h3, h4 {
     font-weight: bold;
 }
+
+/* Header/Nav Section */
 header {
     text-align: center;
     display: flex;
@@ -72,6 +74,7 @@ header .wrapper {
     background-color: #222;
     margin: 0auto;
     padding: 1rem;
+    max-width: 1200px;
 }
 
 nav {
@@ -117,6 +120,8 @@ header form {
     font-size: 1.20rem;
 }
 
+
+/* Welcome/Hero section */
 #welcome .wrapper {
     margin: 0auto;
     max-width: 1200px;
@@ -135,16 +140,16 @@ header form {
 #welcome h2 {
     font-size: 4.5rem;
     line-height: 6rem;
-    padding-top: 0.5em;
+    padding-top: 0.5rem;
 }
 #welcome .text-box {
-    padding: 1em;
+    padding: 1rem;
     padding-bottom: 3rem;
     background: rgba(0,0,0,0.5);
     width: 100%;
 }
 #welcome p {
-    padding-bottom: 2.5em;
+    padding-bottom: 2.5rem;
     font-weight: lighter;
     font-size: 0.9rem;
 }
@@ -153,19 +158,17 @@ header form {
     color: #222;
     background-color: #c78c06;
     font-size: 1.2rem;
-    padding: 1em;
+    padding: 2rem;
     text-align: center;
 }
 
-
+/* About Section */
 #about {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    background-color: #ffe6ac;
 }
 #about .wrapper {
-    background-color: #ffe6ac;
     margin: 0auto;
+    max-width: 1200px;
 }
 #about h2 {
     padding-bottom: 1.75rem;
@@ -178,15 +181,15 @@ header form {
 .about-pic {
     padding: 1rem;
     width: 100%;
-    flex-grow: 1;
 }
 #about article {
     padding: 1rem;
 }
 
+/* Services section */
 #services .wrapper {
     margin: 0auto;
-    width: 100%;
+    max-width: 1200px;
 }
 #services h2 {
     padding: 2rem;
@@ -227,6 +230,7 @@ header form {
     width: 100%;
 }
 
+/* Vision section */
 #vision {
     display: flex;
     flex-wrap: wrap;
@@ -236,13 +240,13 @@ header form {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 2rem 1rem 3rem 1rem;
+    padding: 2rem 3rem 3rem 1rem;
     line-height: 1.5rem;
     margin-bottom: 2rem;
 }
 #vision .wrapper {
-    width: 100%;
     margin: 0auto;
+    max-width: 1200px;
 }
 #vision h3 {
     font-size: 2rem;
@@ -260,9 +264,9 @@ header form {
     border:#c78c06 solid 1px;
 }
 
+/* Team section */
 #team .wrapper {
     margin: 0auto;
-    width: 100%;
     max-width: 1200px;
 }
 #team h2 {
@@ -280,15 +284,13 @@ header form {
     justify-self: center;
     margin: 0 2rem;
     width: 95%;
-    padding-bottom: 2rem;
     line-height: 1.3rem;
 }
 #team p, #team h3 {
-    padding: 1rem;
+    padding: 2rem 0;
 }
 #team h4 {
-    padding-left: 1rem;
-    padding-bottom: 0.7rem;
+
     border-bottom: #c78c06 solid 2px;
 }
 #team img {
@@ -298,6 +300,7 @@ header form {
     font-size: 2.5rem;
 }
 
+/* Contact section */
 #contact h2 {
     padding: 1.5rem;
     font-size: 3rem;
@@ -318,13 +321,16 @@ header form {
 #contact a {
     color: #c78c06;
     background-color: #222;
-    width: 9%;
     text-decoration: none;
     font-size: 1.5rem;
     padding: 5px;
+    width: 4.5rem;
 }
-#message {
-    height: 5rem;
+ .message textarea {
+    height: 10rem;
+    line-height: 2rem;
+    width: 100%;
+    margin-top: 1rem;
 }
 .hours {
     display: grid;
@@ -343,6 +349,8 @@ iframe {
     padding: 0 1.5rem;
     width: 100%;
 }
+
+/* Footer */
 footer {
     background-color: #222;
     color: #c78c06;
@@ -355,4 +363,239 @@ footer small {
 }
 footer a {
     color: #c78c06;
+}
+
+/* desktop media query */
+@media only screen and (min-width: 760px) {
+    /* Header/Nav section desktop*/
+            .wrapper {
+                align-self: center;
+            }
+            header {
+                width: 100%;
+                background-color: #222;
+                
+            }
+            header .wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                flex-wrap: nowrap;
+                justify-content: center;
+                margin: 2rem;
+            }
+            header .wrapper ul {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 2rem;
+                
+            }
+            .logo-block {
+                padding: 0;
+
+                background-color: none;
+            }
+            nav {
+                padding: 0;
+                flex-wrap: nowrap;
+            }
+            nav ul li {
+                padding: 0;
+                position: relative;
+                white-space: nowrap;
+                font-size: 1.1rem;
+            }
+            .material-icons-outlined {
+                font-size: 1.5rem;
+                padding: 0.2em;
+                margin-top: 1rem;
+            }
+            .search {
+                padding: 0.5em;
+                width: 90%;
+                font-size: 1rem;
+                margin-top: 1rem;
+                }
+        /* Welcome section desktop*/
+                #welcome .text-box {
+                    width: 90%;
+                    margin: 2rem;
+                }
+        /* About section desktop */
+                #about {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            
+               #about .wrapper {
+                display: flex;
+                flex-direction: row;
+               }
+                .about-pic {
+                    padding: 1rem;
+                    width: 50%;
+                }
+                #about article {
+                    width: 50%;
+                    padding: 1rem 0;
+                }
+                #about h2 {
+                    font-size: 2.5rem;
+                    padding-top: 1rem;
+                }
+                #about p {
+                    font-size: 0.8rem;
+
+                }
+        /* Services section desktop */
+                #services {
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+               .services-grid {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: 1fr 1fr;
+                padding: 0;
+                
+               }
+               #services article {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+               }
+               #services img {
+                padding: 0;
+               }
+               #services p {
+                padding: 0;
+                font-size: 0.7rem;
+                padding: 0.5rem;
+               }
+               #services h3 {
+                font-size: 1.4rem;
+                padding: 0;
+                padding: 0.8rem 0.5rem;
+               }
+               #services a {
+                white-space: nowrap;
+                font-size: 1rem;
+                padding: 0;
+                padding: 0.5rem;
+                margin: 0;
+                flex-grow: 1;
+                text-align: center;
+                margin: 1rem;
+                }
+                .services-grid :nth-child(1){
+
+                    Grid-row: 1;
+                    Grid-column: span 3;
+                }
+                .services-grid :nth-child(2){
+
+                    Grid-row: 1;
+                    Grid-column: span 3;
+                }
+                .services-grid :nth-child(3){
+                    grid-row: 2;
+                    grid-column: span 2;
+                    height: 85%;
+                }
+                .services-grid :nth-child(4){
+                    grid-row: 2;
+                    grid-column: span 2;
+                    height: 85%;
+                }
+                .services-grid :nth-child(5){
+                    grid-row: 2;
+                    grid-column: span 2;
+                    height: 85%;
+                }
+            /* Team section desktop */
+            #team {
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #team h2 {
+                font-size: 3rem;
+                padding: 1.5rem;
+            }
+            .team-grid {
+                display: grid;
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 0;
+                margin-bottom: 2rem;
+            }
+            #team article {
+                display: flex;
+                width: 100%;
+            }
+           
+            .john-text {
+                width: 50%;
+                padding: 1rem;
+            }
+            .bob {
+                flex-direction: row-reverse;
+            }
+            .bob-text {
+                width: 50%;
+                padding: 1rem;
+            }
+            #team h4 {
+            
+                border-bottom: #c78c06 solid 2px;
+            }
+            #team img {
+                width: 50%;
+            }
+            #team h3 {
+                font-size: 2.5rem;
+            }
+
+            /* Contact section desktop */
+            #contact .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+           
+            
+            #contact .wrapper :nth-child(1) {
+                grid-row: 1;
+                grid-column: 1;
+            }
+            #contact .wrapper :nth-child(2) {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+           }
+           #contact .wrapper :nth-child(3) {
+            grid-column: 2 / 2;
+            grid-row: 1 / 2;
+           }
+           .hours {
+            display: flex;
+            flex-direction: row;
+            padding: 1.5rem;
+            text-align: center;
+            flex-wrap: wrap;
+            }
+            .hours p {
+            border: black solid 1px;
+            padding: 1rem 0;
+            flex-basis: 50%;
+            }
+            .hours p:nth-child(1), .hours p:nth-child(2) {
+            background-color: #ffe6ac;
+            flex-basis: 50%;
+           
+            }
+            /* footer desktop */
+            footer {
+                padding-left: 4rem;
+            }
 }

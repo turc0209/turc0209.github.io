@@ -65,7 +65,7 @@
         </div>
       </section>
 
-      <section id="services" class="bg-yellow">
+      <section id="services">
         <div class="wrapper">
             <h2>Our Services</h2>
             <div class="services-grid">
@@ -149,16 +149,20 @@
                
                 <article class="john">
                     <img src="images/john.jpg" alt="John Doe">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident animi fugit pariatur hic officia eligendi accusantium. amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident </p>
+                    <div class="john-text">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident animi fugit pariatur hic officia eligendi accusantium. amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident </p>
+                    </div>  
                 </article>
                 
                 <article class="bob">
                     <img src="images/bob.jpg" alt="Bob Rite">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam excepturi rem accusamus eius dolor amet at omnis, nihil doloremque animi minima, quia id. Ipsa quod iusto enim, tempore quo provident. amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident </p>
+                    <div class="bob-text">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam excepturi rem accusamus eius dolor amet at omnis, nihil doloremque animi minima, quia id. Ipsa quod iusto enim, tempore quo provident. amet consectetur adipisicing elit. Dolor nostrum nam, sequi rem excepturi id ipsa vitae totam quod at labore itaque provident </p>
+                    </div>
                 </article>
                 
             </div>
@@ -169,32 +173,41 @@
             <!-- divs in this section to be arranged using flex -->
             <h2>Contact Us</h2>
             <div class="wrapper">
-                <div class="message-send">
-                    <h3>Send us a message</h3>
-                    <form>
-                        <label for="fname">Full Name</label><br>
-                        <input type="text" id="fname" name="fname"><br>
-                        <label for="email">Email</label><br>
-                        <input type="text" id="email" name="email">
-                        <label for="message">Message</label><br>
-                        <input type="text" id="message" name="message"><br>
-                        <a class="btn" href="#">Send</a>
-                    </form> 
+                <div class="contact">
+                    <div class="message-send">
+                        <h3>Send us a message</h3>
+                        <form>
+                            <label for="fname">Full Name</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="email">Email</label><br>
+                            <input type="text" id="email" name="email">
+                            <div class="message">
+                                <label for="message">Message</label><br>
+                                <textarea id="message" name="message">
+                                    </textarea>
+                            </div>
+                            <a class="btn" href="#">Send</a>
+                        </form> 
+                    </div>
                 </div>
-                <h3>Hours of operation</h3>
-                <div class="hours">
-                    <!-- content to be arranged in a grid -->
-                   
-                        <p>Days</p>
-                        <p>Hours</p>
-                        <p>Monday - Friday</p>
-                        <p>9 AM - 6 PM</p>
-                        <p>Saturday - Sunday</p>
-                        <p>Closed</p>
+                <div class="contact">
+                    <h3>Hours of operation</h3>
+                    <div class="hours">
+                        <!-- content to be arranged in a grid -->
+                    
+                            <p>Days</p>
+                            <p>Hours</p>
+                            <p>Monday - Friday</p>
+                            <p>9 AM - 6 PM</p>
+                            <p>Saturday - Sunday</p>
+                            <p>Closed</p>
+                    </div>
                 </div>
-                <div class="location">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d44490.80000064277!2d-75.75929460467646!3d45.35755656700828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690651280912!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact">
+                    <div class="location">
+                        <h3>Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d44490.80000064277!2d-75.75929460467646!3d45.35755656700828!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690651280912!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </section>
